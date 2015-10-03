@@ -1,0 +1,145 @@
+<com.github.fafaldo.blurzoomgallery.widget.BlurZoomCoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/coordinator">
+
+    <FrameLayout
+        android:id="@+id/gallery_coordinator_gallery_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/gallery_coordinator_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/gallery_coordinator_appbarlayout"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleTextAppearance="@style/MyExpandedTextAppearance"
+            app:collapsedTitleTextAppearance="@style/MyCollapsedTextAppearance"
+            app:expandedTitleMargin="50dp"
+            android:background="@android:color/transparent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/gallery_coordinator_toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/gallery_coordinator_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/gallery_coordinator_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery_coordinator_placeholder">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ABOUT"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="#000"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis semper risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam pharetra, ligula ultrices consectetur finibus, lorem erat egestas mi, quis volutpat sem purus non ante. Nulla vitae rhoncus nisi. Donec consectetur velit tempor erat fermentum vehicula. Etiam in commodo lectus. Nam in molestie orci. Nulla ac scelerisque turpis. Fusce suscipit commodo nisi id porttitor."
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="#ba000000"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PLACES TO VISIT"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="#000"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis semper risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam pharetra, ligula ultrices consectetur finibus, lorem erat egestas mi, quis volutpat sem purus non ante. Nulla vitae rhoncus nisi. Donec consectetur velit tempor erat fermentum vehicula. Etiam in commodo lectus. Nam in molestie orci. Nulla ac scelerisque turpis. Fusce suscipit commodo nisi id porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis semper risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam pharetra, ligula ultrices consectetur finibus, lorem erat egestas mi, quis volutpat sem purus non ante. Nulla vitae rhoncus nisi. Donec consectetur velit tempor erat fermentum vehicula. Etiam in commodo lectus. Nam in molestie orci. Nulla ac scelerisque turpis. Fusce suscipit commodo nisi id porttitor."
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textColor="#ba000000"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PRICES"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="#000"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis semper risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam pharetra, ligula ultrices consectetur finibus, lorem erat egestas mi, quis volutpat sem purus non ante. Nulla vitae rhoncus nisi. Donec consectetur velit tempor erat fermentum vehicula. Etiam in commodo lectus. Nam in molestie orci. Nulla ac scelerisque turpis. Fusce suscipit commodo nisi id porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis semper risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam pharetra, ligula ultrices consectetur finibus, lorem erat egestas mi, quis volutpat sem purus non ante. Nulla vitae rhoncus nisi. Donec consectetur velit tempor erat fermentum vehicula. Etiam in commodo lectus. Nam in molestie orci. Nulla ac scelerisque turpis. Fusce suscipit commodo nisi id porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis semper risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam pharetra, ligula ultrices consectetur finibus, lorem erat egestas mi, quis volutpat sem purus non ante. Nulla vitae rhoncus nisi. Donec consectetur velit tempor erat fermentum vehicula. Etiam in commodo lectus. Nam in molestie orci. Nulla ac scelerisque turpis. Fusce suscipit commodo nisi id porttitor."
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="#ba000000"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</com.github.fafaldo.blurzoomgallery.widget.BlurZoomCoordinatorLayout>

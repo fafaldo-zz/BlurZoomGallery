@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="gallery_coordinator_placeholder" type="id"/>
+    <item name="gallery_coordinator_toolbar" type="id"/>
+    <item name="gallery_coordinator_gallery" type="id"/>
+    <item name="gallery_coordinator_gallery_container" type="id"/>
+    <item name="gallery_coordinator_appbarlayout" type="id"/>
+    <item name="gallery_coordinator_scroll" type="id"/>
+</resources>

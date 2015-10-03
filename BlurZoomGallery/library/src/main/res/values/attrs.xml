@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BlurZoomCoordinatorLayout">
+        <attr name="collapsedListHeight" format="dimension"/>
+        <attr name="maxBlurRadius" format="float"/>
+        <attr name="blurSteps" format="integer"/>
+        <attr name="bitmapSizeDivide" format="integer"/>
+        <attr name="blurEnable" format="boolean"/>
+        <attr name="scaleEnable" format="boolean"/>
+        <attr name="maxScale" format="float"/>
+        <attr name="android:scaleType"/>
+    </declare-styleable>
+</resources>
