@@ -1,6 +1,8 @@
 BlurZoomGallery
 ================
 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.fafaldo/blur-zoom-gallery/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.fafaldo/blur-zoom-gallery)
+
 Extended CoordinatorLayout, that helps creating background galleries.
 
 ![Illustration of behavior](https://github.com/fafaldo/BlurZoomGallery/blob/master/blurzoomgallery.gif "Illustration of behavior")
@@ -17,6 +19,13 @@ Features:
 
 How to use
 ----------
+
+Import dependency using Gradle:
+
+```
+compile 'com.github.fafaldo:blur-zoom-gallery:1.0.0'
+```
+
 
 In order to use BlurZoomGallery you need to implement following view hierarchy in your XML layout file:
 
@@ -149,6 +158,13 @@ setDuration(int duration);
 However, Google APIs doesn't allow this kind of customization yet. My implementation uses Java's reflection mechanism, so be aware that this code might stop working in the future.
 
 Blur animation is done using frame by frame animation, with each frame blurred more and more. ImageViews are added dynamically from the code. You can control max blur radius and number of blur steps. Remember, that adding too many ImageView might affect performance. In order to reduce memory consumption images are downscaled before blurring. You can control this downscaling with one of the parameters.
+
+To properly use the selected duration and interpolator you should play expend/collapse animation on AppBarLayout at least once, before trying to open gallery by touching. You should call
+```
+appBarLayout.setExpanded(true, true);
+```
+By default AppBarLayout is expanded, so call function with first parameter set to 'true', to avoid unwanted animation on start-up. Remember to set second parameter to 'true' too, because only then will the inner fields be properly initiated.
+
 
 Parameters:
 -----

@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         coordinatorLayout.setDuration(400);
         coordinatorLayout.setInterpolator(new AccelerateDecelerateInterpolator());
 
-        appBarLayout.setExpanded(true, false);
+        appBarLayout.setExpanded(true, true);
     }
 
     public void blur(Bitmap bmp, BlurZoomCoordinatorLayout.OnBlurCompletedListener listener) {
