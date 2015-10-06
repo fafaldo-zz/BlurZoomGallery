@@ -3,7 +3,7 @@ BlurZoomGallery
 
 Extended CoordinatorLayout, that helps creating background galleries.
 
-![Illustration of behavior](https://github.com/fafaldo/FABToolbar/blob/master/blurzoomgallery.gif "Illustration of behavior")
+![Illustration of behavior](https://github.com/fafaldo/BlurZoomGallery/blob/master/blurzoomgallery.gif "Illustration of behavior")
 
 
 Features:
@@ -170,7 +170,7 @@ You can control these parameters via XML:
 Changelog
 ---------
 
-* 1.0 - initial release
+* 1.0.0 - initial release
 
 
 License
