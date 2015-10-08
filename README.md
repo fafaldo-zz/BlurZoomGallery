@@ -1,7 +1,7 @@
 BlurZoomGallery
 ================
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.fafaldo/blur-zoom-gallery/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.fafaldo/blur-zoom-gallery)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.fafaldo/blur-zoom-gallery/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.fafaldo/blur-zoom-gallery) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-BlurZoomGallery-green.svg?style=flat)](https://android-arsenal.com/details/1/2604)
 
 Extended CoordinatorLayout, that helps creating background galleries.
 
